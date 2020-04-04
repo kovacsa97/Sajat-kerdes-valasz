@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cognitive.LUIS.Programmatic\Cognitive.LUIS.Programmatic.csproj" />
+    <ProjectReference Include="..\Luis.Manage\LuisManager.csproj" />
+  </ItemGroup>
+
+</Project>

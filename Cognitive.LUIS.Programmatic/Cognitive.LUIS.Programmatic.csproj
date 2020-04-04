@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Cognitive.LUIS.Programmatic</PackageId>
+    <Authors>André Secco</Authors>
+    <Owners>andreluizsecco</Owners>
+    <Product>Cognitive.LUIS.Programmatic</Product>
+    <Description>.NET SDK for LUIS Programmatic APIs</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/andreluizsecco/Cognitive-LUIS-Programmatic</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/andreluizsecco/Cognitive-LUIS-Programmatic/raw/master/logo.png</PackageIconUrl>
+    <PackageTags>Microsoft Cognitive LUIS Programmatic</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>Cognitive.LUIS.Programmatic</AssemblyName>
+    <RootNamespace>Cognitive.LUIS.Programmatic</RootNamespace>
+    <Version>1.2.0</Version>
+    <RepositoryUrl>https://github.com/andreluizsecco/Cognitive-LUIS-Programmatic</RepositoryUrl>
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Cognitive.LUIS.Programmatic.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Polly" Version="7.1.0" />
+  </ItemGroup>
+
+</Project>
