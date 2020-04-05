@@ -1,6 +1,6 @@
 # USE - Unified System for Education
 
-## Beveezetés
+## Bevezetés
 
 Oktató szoftverünk egyik pillére a mesterséges intelligencia alapú feladat kiértékelés. Programunk, mely jelenleg konzol applikációként működik, egy webes felületen kérdésekre leadott válaszokat elemzi és visszajelez a válasz helyességét illetően.
 A megoldás innovativitása abban rejlik, hogy a tanulóktól nem pontos egyezés alapú válaszokat kérünk, egy tanító halmaz alapján betanított algoritmus végzi a javítást. Ez alapján számon kérhető olyan tudás, mely a kontakt órák hiányában nehezebbé vált.
@@ -12,6 +12,10 @@ Mint minden mesterséges intelligencián alapuló szoftverben, itt is fenn áll 
 ## Luis AI (Language understanding)
 
 Példa alkalmazásunk a Microsoft Language Understanding szolgáltatását veszi igénybe. Arra használjuk, hogy "szándékokat" adjunk meg, mely maga a kérdés, és a hozzá tartozó "cselekvések" a válasz lehetséges értékei (tanító halmaz). A szoftver futtatása során a kérdésekre adott válaszok feleltethetők meg a cselekvésnek. Ha cselekvés alapján felismerjük szándékot, akkor a kérdésre helyes válasz érkezett.
+
+Luis használata elég egyszerűnek bizonyult, mivel elvégzi helyettünk a betanítást és utána kitelepíti magát, ezért könnyű a fejlesztésre koncentrálni.
+
+Luis-nak köszönhetően a számítások jelentős része a felhőben történik, melyet a web-es alkalmazásunk szervere ér el. A diákok és tanárok eszközein futó program csak a saját webszerverünkkel kommunikál, így az adatforgalmat az ő részükröl minimalizáljuk. Egy felelet illetve kérdés-válasz párok megadása során tulajdonképpen csak bájtokat fogyasztunk el, mely rendkívül előnyös és energiatakarékos egy képfeltöltős/videókonferenciás órához képest.
 
 ## Példa
 
