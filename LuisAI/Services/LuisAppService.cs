@@ -42,6 +42,14 @@ namespace LuisAI.Services
             }
         }
 
+        public List<string> GetCorrectAnswers(String question)
+        {
+            using (var client = new LuisProgClient(subscriptionKey, Regions.WestEurope))
+            {
+                return client.Examples.GetAllAsync(appId, appVersion).Result.Where(e => e.IntentLabel == question).Select(e => e.Text).ToList();
+            }
+        }
+
         private bool AddIntent(string intentName)
         {
             using (var client = new LuisProgClient(subscriptionKey, Regions.WestEurope))
